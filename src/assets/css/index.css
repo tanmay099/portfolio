@@ -1,3 +1,7 @@
+
+html, body {
+    height: 100%;
+  }
 /* .home {
     color: yellow;
     font-size: 40px;
@@ -8,11 +12,42 @@
   
 
 } */
-/* #app{
-    display: flex;
-    flex-flow: row;
+#app{
+   height: 100%;
     
-} */
+}
+.app-grid{
+    height: inherit !important;
+   
+}
+.home-tagline{
+    margin-top: 20%;
+    
+
+}
+
+.tagline{
+    color: white !important;
+}
+
+.home-tagline-button{
+    margin-top: 5%;
+   
+
+}
+
+.home-my-offer-button{
+    margin-left:  20px !important;
+}
+.app-grid-row {
+    padding: 0 !important;
+}
+
+.home-container{
+    height: 100%;
+    background-image: url('../img/home-dark.jpg') !important;
+    background-size: cover !important;
+}
 .no-display{
 display: none !important;
 }
@@ -29,7 +64,15 @@ body{
 .container{
     /* overflow-y:  scroll; */
 }
-
+.home{
+  padding: 0 !important;
+}
+@media screen and (min-width: 767px) {
+  .parrent-conatiner {
+    display: flex;
+    flex-flow: row;
+  }
+}
 @media screen and (max-width: 1000px) {
 .main-navigation {
     font-size: 14px;

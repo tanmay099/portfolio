@@ -13,7 +13,7 @@ const Projects = () => {
        workDesc: [`Working on Reactjs - Creating data driven components.
        
     `, `Working On Node Js and Graphql-framework  for creating mutations and  model  and managing REST API s as backend development.`],
-    link: 'http://spoyl.in'
+    link: 'http://actionable.in'
   
         },
         {
@@ -25,7 +25,7 @@ const Projects = () => {
      workDesc: [`Working On Spring- JAVA-framework for creating and managing REST API s as backend development.
      `, `Working on Reactjs - Creating data-driven components in Material-UI and used d3.js as chart ui for website, from csv files and APIs calls`
      ,`Reduced component rendering time by 80% by implementing Tree data structure while fetching data through API, leading to 7.20 sec reduction in data fetch time from server` ],
-     link: 'http://spoyl.in'
+     link: 'http://unifygoals.in'
         }
         ,{
      company: 'FamsousEnuf',
@@ -35,7 +35,7 @@ const Projects = () => {
      duration: 'Mar 2019 to NOW',
      workDesc: [`Worked on Reactjs and Nodejs -Created Responsive web pages for the landing screen of startup website and Deployed it and managed REST API for the website
     `],
-    link: 'http://spoyl.in'
+    link: 'http://famousenuf.com'
         },
         {
       company :'Salk health care',
@@ -45,16 +45,16 @@ const Projects = () => {
      duration: 'Mar 2019 to NOW',
      workDesc: [`Worked On the Android app- worked on material design UI for the app and maintained api call for data rendering in to the apps ui
      ` ],
-     link: 'http://spoyl.in'
+     link: 'https://www.salk.healthcare/'
         }
         
       ]
   
   }
-    return(<Responsive   as={Responsive.onlyMobile ? Grid.Row : Grid.Column} stretched  width={Responsive.onlyMobile ? 16 : 12}>
-      <Segment className={'container'} padded>
+    return(  <Responsive  as={Grid.Column}  largeScreen={12}  mobile={16} largeScreen={12}>
+      <Segment className={'container'} >
       <Grid divided>
-      <Grid.Column width={2}>
+      <Grid.Column >
       <Header as='h1'>
     <Icon name='code' />
     <Header.Content>Projects</Header.Content>
