@@ -43,6 +43,10 @@ html, body {
     padding: 0 !important;
 }
 
+.tech-tile{
+    margin: 5px !important;
+}
+
 .home-container{
     height: 100%;
     background-image: url('../img/home-dark.jpg') !important;

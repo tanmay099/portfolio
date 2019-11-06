@@ -8,12 +8,14 @@ const Projects = () => {
     return [
         { company: 'Cracker Digital Media',
         icon: Spoyl,
-        duration: 'Mar 2019 to NOW',
+        duration: 'Aug 2018 to Jan 1 2019',
         companyMoto: "Candian based company ",
        workDesc: [`Working on Reactjs - Creating data driven components.
        
     `, `Working On Node Js and Graphql-framework  for creating mutations and  model  and managing REST API s as backend development.`],
-    link: 'http://actionable.in'
+    link: 'http://actionable.in',
+    technologies: ['react', 'node', 'redux', 'graphql' , 'relay', 'loopback' ]
+
   
         },
         {
@@ -21,21 +23,23 @@ const Projects = () => {
      companyMoto: "For each ad campaign that you create.",
   
      icon: Spoyl,
-     duration: 'Mar 2019 to NOW',
+     duration: 'Feb 2018 to Aug 2018',
      workDesc: [`Working On Spring- JAVA-framework for creating and managing REST API s as backend development.
      `, `Working on Reactjs - Creating data-driven components in Material-UI and used d3.js as chart ui for website, from csv files and APIs calls`
      ,`Reduced component rendering time by 80% by implementing Tree data structure while fetching data through API, leading to 7.20 sec reduction in data fetch time from server` ],
-     link: 'http://unifygoals.in'
+     link: 'http://unifygoals.in',
+     technologies: ['react', 'node', 'Spring boot', 'mysql' , 'D3 js', 'MUi' ]
         }
         ,{
      company: 'FamsousEnuf',
      companyMoto: "For each ad campaign that you create.",
   
      icon: Spoyl,
-     duration: 'Mar 2019 to NOW',
+     duration: 'Aug 2017 to Feb 2018',
      workDesc: [`Worked on Reactjs and Nodejs -Created Responsive web pages for the landing screen of startup website and Deployed it and managed REST API for the website
     `],
-    link: 'http://famousenuf.com'
+    link: 'http://famousenuf.com',
+    technologies: ['react', 'node', 'Spring boot', 'mysql' , 'D3 js', 'MUI' ]
         },
         {
       company :'Salk health care',
@@ -45,9 +49,10 @@ const Projects = () => {
      duration: 'Mar 2019 to NOW',
      workDesc: [`Worked On the Android app- worked on material design UI for the app and maintained api call for data rendering in to the apps ui
      ` ],
-     link: 'https://www.salk.healthcare/'
-        }
+     link: 'https://www.salk.healthcare/',
         
+        technologies: ['java', 'andorid studio',  ]
+      }
       ]
   
   }
@@ -64,12 +69,12 @@ const Projects = () => {
  </Grid.Column>
  </Grid>
  <Divider/>
-          <Grid >
-            {getSteps().map((label , index)=> (<Grid.Row divided key={index}>
-              <Grid.Column className={Responsive.onlyMobile ? 'no-display': ''} width={3}>
+          <Grid>
+{getSteps().map((label , index)=> (<Grid.Row divided key={index}>
+              <Grid.Column  width={3}>
   {label.duration}
   </Grid.Column>
-  <Grid.Column  width={Responsive.onlyMobile ? 16 : 13}>
+  <Grid.Column  width={13}>
   <Header as='h2'>
     
     <Header.Content>{label.company}</Header.Content>
@@ -95,16 +100,15 @@ const Projects = () => {
     
     <Header.Content>Technologies</Header.Content>
     </Header>
-    <Segment basic>
-    <Label>
-    <Icon name='vuejs' color="green"/> Vue JS
-  </Label> <Label>
-    <Icon name='node' color="green" /> Node JS
-  </Label> <Label>
-    <Icon name='react' color="blue" /> React JS
-  </Label> <Label>
-    <Icon name='code'color="yellow" /> Javascript
-  </Label>
+    <Segment basic >
+      {label.technologies.map((tech,index)  => (
+        <Label className="tech-tile">
+        <Icon name='code' color="black"/>{tech.toUpperCase()}
+        </Label> 
+        ))
+
+      }
+   
   </Segment>
     
  
