@@ -11,6 +11,9 @@
 .profilePic{
     margin-top: 20px ;
 }
+.timeline-time{
+    padding:  15px 15px 15px 0px;
+}
 
 .header-class {
     position: fixed;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Segment, Label, Header ,Icon, Container,Divider, Button, Image, Responsive, GridRow} from 'semantic-ui-react'
+import { Grid, Segment, Label, Header ,Icon, Container,Divider, Button, Image, Responsive, GridRow, Message} from 'semantic-ui-react'
 import Spoyl from '../assets/img/spoyl.png'
 import '../assets/css/index.css'
 const Projects = () => {
@@ -9,7 +9,8 @@ const Projects = () => {
         { company: 'Cracker Digital Media',
         icon: Spoyl,
         duration: 'Aug 2018 to Jan 1 2019',
-        companyMoto: "Candian based company ",
+        companyMoto: "Serivce based company. Worked for candian company actionable.co ",
+        companydesc: "The Actionable Platform provides three key components that are essential for turning learning into new behaviors to drive business outcomes",
        workDesc: [`Working on Reactjs - Creating data driven components.
        
     `, `Working On Node Js and Graphql-framework  for creating mutations and  model  and managing REST API s as backend development.`],
@@ -20,7 +21,8 @@ const Projects = () => {
         },
         {
       company :'Unifygoals (Oficio Cloud Software)',
-     companyMoto: "For each ad campaign that you create.",
+     companyMoto: "Product based on Google OKR (Objective Key Result)",
+     companydesc: 'Align Teams to Business Objectives',
   
      icon: Spoyl,
      duration: 'Feb 2018 to Aug 2018',
@@ -32,9 +34,9 @@ const Projects = () => {
         }
         ,{
      company: 'FamsousEnuf',
-     companyMoto: "For each ad campaign that you create.",
-  
-     icon: Spoyl,
+     companyMoto: "Funded By Facebook thorugh FB Start program,",
+     companydesc: 'World of mouth marketing at scale through facebook microfiluencers',
+     icon: Spoyl,   
      duration: 'Aug 2017 to Feb 2018',
      workDesc: [`Worked on Reactjs and Nodejs -Created Responsive web pages for the landing screen of startup website and Deployed it and managed REST API for the website
     `],
@@ -43,8 +45,8 @@ const Projects = () => {
         },
         {
       company :'Salk health care',
-     companyMoto: "For each ad campaign that you create.",
-  
+     companyMoto: "Product to create individual healthcare client's digital platform",
+     companydesc: 'Create your Healthcare Brand Tools to digitize your Medical Practice',
      icon: Spoyl,
      duration: 'Mar 2019 to NOW',
      workDesc: [`Worked On the Android app- worked on material design UI for the app and maintained api call for data rendering in to the apps ui
@@ -69,12 +71,22 @@ const Projects = () => {
  </Grid.Column>
  </Grid>
  <Divider/>
-          <Grid>
+          <Grid >
 {getSteps().map((label , index)=> (<Grid.Row divided key={index}>
-              <Grid.Column  width={3}>
-  {label.duration}
+              <Grid.Column  largeScreen={3}  mobile={16} largeScreen={3}>
+                <Container className="timeline-time" text>
+                <Responsive as={Divider} horizontal {...Responsive.onlyMobile}>
+      <Header as='h4'>
+        {/* <Icon name='bar chart' /> */}
+        {label.duration}
+      </Header>
+      </Responsive>
+      <Responsive {...Responsive.onlyComputer} as={Label} >{label.duration}</Responsive>
+    
+  
+  </Container>
   </Grid.Column>
-  <Grid.Column  width={13}>
+  <Grid.Column  largeScreen={13}  mobile={16} largeScreen={13}>
   <Header as='h2'>
     
     <Header.Content>{label.company}</Header.Content>
@@ -84,7 +96,10 @@ const Projects = () => {
   </Header>
  
   <Container textAlign='justified'>
-      
+  <Message>
+    
+    <p>{label.companydesc}</p>
+  </Message>
      
       <ul>
       
