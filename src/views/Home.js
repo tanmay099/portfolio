@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import  '../assets/css/index.css'
-import { Grid, Segment, Header, Icon, Container, Button } from 'semantic-ui-react'
+import { Grid, Segment, Header, Container, Button } from 'semantic-ui-react'
 import  {Link} from 'react-router-dom';
 
 

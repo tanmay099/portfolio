@@ -89,7 +89,7 @@ const Projects = () => {
       <ul>
       
       {label.workDesc.map(text => (
-        <li>{text}</li>
+        <li className={"workdesc"}>{text}</li>
       ))}
      </ul>
      <Button basic color="blue">

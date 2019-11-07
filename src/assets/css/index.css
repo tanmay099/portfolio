@@ -30,6 +30,11 @@ html, body {
     color: white !important;
 }
 
+.barIcon{
+    float: right !important;
+    padding-right: 35px !important;
+}
+
 .home-tagline-button{
     margin-top: 5%;
    
@@ -45,6 +50,10 @@ html, body {
 
 .tech-tile{
     margin: 5px !important;
+}
+
+.workdesc{
+    font-size: 16px !important;
 }
 
 .home-container{

@@ -27,9 +27,9 @@ export default  Headers = () => {
     element.classList.toggle('on');
  }
   function handleItemClick(e, { name }){
-    
+    console.log(name)
     setActiveItem(name)
-    return  history.push( name === ('home' || 'pro') ? "/" : "/" + name)
+    return  history.push( name ==='home' ? "/" : "/" + name)
 }
 
  
@@ -76,7 +76,15 @@ export default  Headers = () => {
               onClick={handleItemClick}
             />
           </Menu>
+          <Segment basic textAlign="left">
+           <Icon  name="facebook" size='large'/> 
+           <Icon  name="twitter" size='large'/> 
+           <Icon  name="instagram" size='large'/> 
+           <Icon  name="github" size='large'/> 
+
+          </Segment>
           </div>
+          
         </Grid.Column>
       
     

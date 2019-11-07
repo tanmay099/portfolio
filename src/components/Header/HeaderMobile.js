@@ -54,7 +54,11 @@ const HeaderMobile = () => {
              <Menu.Item 
                className="nav-menu-item"
                children={<Grid.Column>
-                 <Icon onClick={myFunction} inverted color="black" name='bars' />
+               <Icon  name="facebook" size='large'/> 
+           <Icon  name="twitter" size='large'/> 
+           <Icon  name="instagram" size='large'/> 
+           <Icon  name="github" size='large'/>   
+           <Icon size="large" onClick={myFunction} className="barIcon" corner="top right" inverted color="black" name='bars' />
                <List link  relaxed="very" id="nav" >
        <List.Item className="nav-link">
          
