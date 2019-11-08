@@ -8,7 +8,7 @@ import { Grid, Menu, Segment, Responsive, } from 'semantic-ui-react'
 
 //components
 import Home from "./views/Home.js"
-import Connect from "./views/Connect.js"
+import MyOffer from "./views/MyOffer.js"
 import AboutMe from "./views/AboutMe.js"
 import Projects from "./views/Projects.js"
 import Blog from "./views/Blog.js"
@@ -32,7 +32,7 @@ ReactDOM.render(
         <Route exact path="/" ><Home/></Route>
         <Route path="/aboutme"><AboutMe/></Route>
         <Route path="/blog"><Blog/></Route>
-        <Route path="/connect"><Connect/></Route>
+        <Route path="/myoffer"><MyOffer/></Route>
         <Route path="/projects" ><Projects/></Route>
     </Switch>
     </Grid.Row>

@@ -45,13 +45,17 @@ html, body {
     margin-left:  20px !important;
 }
 .app-grid-row {
-    padding: 0 !important;
+    /* padding: 0 !important; */
 }
 
 .tech-tile{
     margin: 5px !important;
 }
 
+.para-text{
+    font-size: 16px !important;
+
+}
 .workdesc{
     font-size: 16px !important;
 }

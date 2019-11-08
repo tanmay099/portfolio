@@ -81,7 +81,7 @@ const Projects = () => {
         {label.duration}
       </Header>
       </Responsive>
-      <Responsive {...Responsive.onlyComputer} as={Label} >{label.duration}</Responsive>
+      <Responsive {...Responsive.onlyComputer} as={Label} color="black" >{label.duration}</Responsive>
     
   
   </Container>

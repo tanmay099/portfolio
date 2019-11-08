@@ -71,8 +71,8 @@ export default  Headers = () => {
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='connect'
-              active={activeItem === 'connect'}
+              name='myoffer'
+              active={activeItem === 'myoffer'}
               onClick={handleItemClick}
             />
           </Menu>
