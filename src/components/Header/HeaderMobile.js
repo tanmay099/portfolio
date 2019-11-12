@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import { Grid, Menu, Image ,Icon ,  Header, Responsive, Segment, Button ,Dropdown , List, Sidebar, Divider, GridColumn} from 'semantic-ui-react'
-import profilepic from '../../assets/img/pro.jpg'
+import profilepic from '../../../dist/assets/img/pro.jpg'
 
 import { useHistory} from 'react-router-dom'
 import { Link } from "react-router-dom";
@@ -24,7 +24,7 @@ const HeaderMobile = () => {
      
    }
    function myFunction() {
-    var element = document.getElementById("nav");
+    var element = document.getElementById("menu");
     element.classList.toggle('on');
  }
   function handleItemClick(e, { name }){
@@ -36,7 +36,9 @@ const HeaderMobile = () => {
     return(<Grid.Column mobile={16}  className="header-mobile" >
         <Menu mobile={16} fluid vertical  >
     <Menu.Item
-                 children={<div><Image src={profilepic} className="profilePic" centered size={"small"} circular/>
+                 children={<div>
+                   
+                   <Image src={profilepic} className="profilePic" centered size={"small"} circular/>
                  <Header as='h2' textAlign="center">
                 
                  Tanmay Sharma
@@ -53,42 +55,38 @@ const HeaderMobile = () => {
                </Menu.Item>
              <Menu.Item 
                className="nav-menu-item"
-               children={<Grid.Column>
-               <Icon  name="facebook" size='large'/> 
+               children={
+                <div id="menu">
+                <div className="mobile_nav_top" onClick={myFunction}>
+                  <div className="mobile_nav_left">
+                  <Icon  name="facebook" size='large'/> 
            <Icon  name="twitter" size='large'/> 
            <Icon  name="instagram" size='large'/> 
-           <Icon  name="github" size='large'/>   
-           <Icon size="large" onClick={myFunction} className="barIcon" corner="top right" inverted color="black" name='bars' />
-               <List link  relaxed="very" id="nav" >
-       <List.Item className="nav-link">
-         
-         <List.Content floated="right" onClick={handleItemClick}>
-           <List.Header  to="/aboutme" as={Link}>AboutMe</List.Header>
-         </List.Content>
-       </List.Item>
-       <List.Item className="nav-link">
-        
-         <List.Content floated="right"   onClick={handleItemClick}>
-           <List.Header to="/projects"  as={Link}>Projects</List.Header>
-         </List.Content>
-       </List.Item>
-       <List.Item className="nav-link">
-         <List.Content floated="right"   onClick={handleItemClick}>
-           <List.Header to="/blog" as={Link}>Blog</List.Header>
-         </List.Content>
-       </List.Item>
-       <List.Item className="nav-link">
-         <List.Content floated="right"  onClick={handleItemClick}>
-           <List.Header to="/connect" as={Link}>Connect</List.Header>
-         </List.Content>
-       </List.Item>
-     </List></Grid.Column>
-               }>
-                 
-                 
+           <Icon  name="github" size='large'/> 
+           <Icon  name="linkedin" size='large'/> 
+                  </div>
+                  <div className="mobile_nav_right">
+                    <Icon name="bars" size="large" /></div>
+                </div>
+                <ul id="list">
+                    <li className="menu_list" to="/aboutme" as={Link}>AboutMe
+                   
+                    </li>
+                     <li className="menu_list" to="/projects" as={Link}>Projects
+                     
+                     </li>
+                     <li className="menu_list" to="/connect" as={Link}>Connect
+                    
+                     </li>
+                </ul>
+            </div>
+              }>
+
                </Menu.Item>
-            
-           </Menu></Grid.Column>)
+               </Menu>
+     </Grid.Column>
+           
+           )
 }
 
 export default HeaderMobile;

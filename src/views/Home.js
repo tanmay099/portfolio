@@ -1,19 +1,17 @@
 import React, {useEffect} from 'react';
-import  '../assets/css/index.css'
+import  '../../dist/assets/css/index.css'
 import { Grid, Segment, Header, Container, Button } from 'semantic-ui-react'
-import  {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
  const Home = () => {
-    useEffect(() => {
-     })
+    useEffect(() => {})
      return(<Grid.Column stretched className="home" largeScreen={12}  mobile={16} largeScreen={12}>
       <Segment className="home-container" basic color="black">
          <Container className="home-tagline" text>
             <Header className="tagline" as="h1">
                Hi, I'm Tanmay
-               <Header.Content as="p">A freelance web developer specialized in
- front-end and back-end web development</Header.Content>
+               <Header.Content as="p">A Software Developer specialized in front-end and back-end web development</Header.Content>
 
             </Header>
 

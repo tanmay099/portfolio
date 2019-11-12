@@ -62,7 +62,7 @@ html, body {
 
 .home-container{
     height: 100%;
-    background-image: url('../img/home-dark.jpg') !important;
+    background-image: url('https://picsum.photos/id/366/4000/3000') !important;
     background-size: cover !important;
 }
 .no-display{

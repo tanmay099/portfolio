@@ -13,7 +13,7 @@ const MyOffer= () => {
      
       <h4>A Full-Stack web developer with experience in developing full fleged applications</h4>
       <p >I had maintained, developed, and launched projects from scratch, with simultaneously carried both front-end and back-end stack</p>
-      <p >My current stack includes Vue.js, React.js, Node.js, Redux, GraphQL and other various frameworks related to javascript</p>
+      <p >My current stack includes <strong>Vue JS</strong>, <strong>React JS</strong>, <strong>Node JS</strong>, Redux, GraphQL and other various frameworks related to javascript</p>
       <p >Can help you following regarding a project:
 </p>
 <ul>
@@ -28,12 +28,12 @@ const MyOffer= () => {
   <Header.Content>FRONT-END WEB DEVELOPMENT</Header.Content>
 </Header>
 <Divider/>
-<p>I specialize in application written in both <strong>React</strong> and <strong>Vue.js</strong> with <strong>Webpack</strong>, Learning new technologies like Typescript</p>
+<p>I specialize in application written in both <strong>React JS</strong> and <strong>Vue JS</strong> with <strong>Webpack</strong>, Learning new technologies like Typescript</p>
 <ul>
-  <li>JavaScript development: bootstraping, refactoring, improving the structure, reliability, build setup</li>
-  <li>Full integration of front-end development using tools like Webpack with features like automatic code reload, code minifications, multiple environments support, CI/CD, Storybook components library, automated testing of accessibility, server-side render and visual snapshots</li>
-  <li>Good in designing components of complex UX</li>
-  <li>Experience in SPA(single page application) load Optimization with technologies like Lazyload , tree shaking, SSR(server side rendering)</li>
+  <li>JavaScript development: <strong>bootstraping, refactoring, improving the structure, reliability, build setup</strong></li>
+  <li>Full integration of front-end development using tools like <strong>Webpack</strong> with features like automatic code reload, code minifications, multiple environments support, CI/CD, Storybook components library, automated testing of accessibility, server-side render and visual snapshots</li>
+  <li>Good in designing components of complex UX and analytics chart library like <strong>D3 JS</strong></li>
+  <li>Experience in SPA(single page application) load Optimization with technologies like <strong>Lazy laoding</strong> , <strong>tree shaking</strong>, SSR(server side rendering)</li>
 </ul>
 <Header as='h2' icon>
       <Header.Content>4</Header.Content>      
@@ -47,15 +47,14 @@ const MyOffer= () => {
   <Header.Content>BACK-END WEB DEVELOPMENT</Header.Content>
 </Header>
 <Divider/>
-<p>In back-end development im specialize in NodeJS and Spring mircoservices, Learning new framworkslike python dijango</p>
+<p>In back-end development im specialize in <strong>Node JS</strong> and <strong>SpringBoot</strong> mircoservices, Learning new framworkslike python dijango</p>
 <ul>
   <li>splitting the back-end into separate domains and microservices,</li>
   <li>cooperation with APIs, remote data synchronizations, cloud servers, asynchronous workers</li>
-  <li>using different types of databases (like PostgreSQL, MySQL,)</li>
-  <li>Experience in SPA(single page application) load Optimization with concepts like Lazy loading , tree shaking, SSR(server side rendering)</li>
-  <li>dividing the servers into different machine nodes / docker containers; database sharding; load balancing</li>
+  <li>Using different types of databases (like Mongo DB, MySQL,)</li>>
+  <li>Dividing the servers into different machine nodes / docker containers; database sharding; load balancing</li>
 </ul>
-<Header as='h2' icon>
+<Header as='h1' icon>
       <Header.Content>4</Header.Content>      
     <Header.Subheader>
      Applications
@@ -70,7 +69,7 @@ const MyOffer= () => {
 <p>In Dev OPS , with good knowleadge of linux im specialize in configuring and deploying application</p>
 <ul>
   <li>launching, deployment and monitoring the app after the release</li>
- <li>Used service like AWS, GCLOUD, Digital Ocean</li>
+ <li>Experience with cloud deployment technologies like <strong>AWS EC2</strong>, <strong>Gcloud</strong>, <strong>Digital Ocean</strong></li>
 </ul>
 <Header as='h2' icon>
       <Header.Content>4</Header.Content>      

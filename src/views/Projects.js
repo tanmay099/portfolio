@@ -1,13 +1,12 @@
 import React from 'react';
 import { Grid, Segment, Label, Header ,Icon, Container,Divider, Button, Image, Responsive, GridRow, Message} from 'semantic-ui-react'
-import Spoyl from '../assets/img/spoyl.png'
-import '../assets/css/index.css'
+import '../../dist/assets/css/index.css'
 const Projects = () => {
 
   function getSteps() {
     return [
         { company: 'Cracker Digital Media',
-        icon: Spoyl,
+        icon: '',
         duration: 'Aug 2018 to Jan 1 2019',
         companyMoto: "Serivce based company. Worked for candian company actionable.co ",
         companydesc: "The Actionable Platform provides three key components that are essential for turning learning into new behaviors to drive business outcomes",
@@ -24,7 +23,7 @@ const Projects = () => {
      companyMoto: "Product based on Google OKR (Objective Key Result)",
      companydesc: 'Align Teams to Business Objectives',
   
-     icon: Spoyl,
+     icon: '',
      duration: 'Feb 2018 to Aug 2018',
      workDesc: [`Working On Spring- JAVA-framework for creating and managing REST API s as backend development.
      `, `Working on Reactjs - Creating data-driven components in Material-UI and used d3.js as chart ui for website, from csv files and APIs calls`
@@ -36,7 +35,7 @@ const Projects = () => {
      company: 'FamsousEnuf',
      companyMoto: "Funded By Facebook thorugh FB Start program,",
      companydesc: 'World of mouth marketing at scale through facebook microfiluencers',
-     icon: Spoyl,   
+     icon: '',   
      duration: 'Aug 2017 to Feb 2018',
      workDesc: [`Worked on Reactjs and Nodejs -Created Responsive web pages for the landing screen of startup website and Deployed it and managed REST API for the website
     `],
@@ -47,7 +46,7 @@ const Projects = () => {
       company :'Salk health care',
      companyMoto: "Product to create individual healthcare client's digital platform",
      companydesc: 'Create your Healthcare Brand Tools to digitize your Medical Practice',
-     icon: Spoyl,
+     icon: '',
      duration: 'Mar 2019 to NOW',
      workDesc: [`Worked On the Android app- worked on material design UI for the app and maintained api call for data rendering in to the apps ui
      ` ],

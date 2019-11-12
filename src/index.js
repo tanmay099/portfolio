@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {createBrowserHistory} from 'history'
 import { Route ,HashRouter as Router , Switch ,} from 'react-router-dom'
-import '../src/assets/css/style.css'
+import '../dist/assets/css/style.css'
 import 'semantic-ui-css/semantic.min.css'
 import { Grid, Menu, Segment, Responsive, } from 'semantic-ui-react'
 
@@ -11,7 +11,7 @@ import Home from "./views/Home.js"
 import MyOffer from "./views/MyOffer.js"
 import AboutMe from "./views/AboutMe.js"
 import Projects from "./views/Projects.js"
-import Blog from "./views/Blog.js"
+import Connect from "./views/Connect.js"
 import Headers from './components/Header/Headers';
 import HeaderMobile  from './components/Header/HeaderMobile';
 //history const 
@@ -31,7 +31,7 @@ ReactDOM.render(
     <Switch>
         <Route exact path="/" ><Home/></Route>
         <Route path="/aboutme"><AboutMe/></Route>
-        <Route path="/blog"><Blog/></Route>
+        <Route path="/connect"><Connect/></Route>
         <Route path="/myoffer"><MyOffer/></Route>
         <Route path="/projects" ><Projects/></Route>
     </Switch>

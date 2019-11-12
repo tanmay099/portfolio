@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Grid, Menu, Image ,Icon ,  Header, Responsive, Segment, Button ,Dropdown , List, Sidebar, Divider, GridColumn} from 'semantic-ui-react'
 import '../Header/header.css'
-import profilepic from '../../assets/img/pro.jpg'
+import profilepic from '../../../dist/assets/img/pro.jpg'
 
 import { useHistory} from 'react-router-dom'
 import { Link } from "react-router-dom";
@@ -40,7 +40,8 @@ export default  Headers = () => {
         ">
           <Menu fluid vertical tabular>
           <Menu.Item
-              children={<div><Image src={profilepic} className="profilePic" centered size={"small"} circular/>
+              children={<div>
+                <Image src={profilepic} className="profilePic" centered size={"small"} circular/>
               <Header as='h2' textAlign="center">
              
               Tanmay Sharma
@@ -55,19 +56,19 @@ export default  Headers = () => {
             >
      
             </Menu.Item>
-          <Menu.Item
+          {/* <Menu.Item
               name='aboutme'
               active={activeItem === 'aboutme'}
               onClick={handleItemClick}
-            />
+            /> */}
             <Menu.Item
               name='projects'
               active={activeItem === 'projects'}
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='blog'
-              active={activeItem === 'blog'}
+              name='connect'
+              active={activeItem === 'connect'}
               onClick={handleItemClick}
             />
             <Menu.Item
@@ -81,6 +82,7 @@ export default  Headers = () => {
            <Icon  name="twitter" size='large'/> 
            <Icon  name="instagram" size='large'/> 
            <Icon  name="github" size='large'/> 
+           <Icon  name="linkedin" size='large'/> 
 
           </Segment>
           </div>

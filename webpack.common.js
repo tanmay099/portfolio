@@ -1,5 +1,5 @@
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+//  const { CleanWebpackPlugin  }  = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -42,7 +42,7 @@ module.exports = {
         'react-dom': '@hot-loader/react-dom',
       }
   },
-  plugins: [
-    //   new CleanWebpackPlugin()
+  plugins: [ 
+    //  new CleanWebpackPlugin()
   ]
 };
