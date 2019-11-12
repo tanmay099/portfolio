@@ -102,8 +102,8 @@
 }
 
 #menu.on #list {
-list-style: none;
-padding-left: 20px !important;
+    list-style: none;
+    padding-left: 20px !important;
     max-height: 500px !important;
     transition: max-height 0.5s ease-in !important;
 }
