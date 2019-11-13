@@ -5,15 +5,28 @@ const Projects = () => {
 
   function getSteps() {
     return [
+      { company: 'Spoyl',
+      icon: '',
+      duration: 'Mar 2019 to NOW',
+      companyMoto: "Spoyl, India's largest influencer-led fashion e-commerce platform",
+      companydesc: "Influencers curated cloth and beauty collection",
+     workDesc: [`Working on Vue JS - Creating data driven templates with the concepts of lazy loading.
+     
+  `, `Developing PWA(progressive web app) with NUXT framwork for web platform. with optimized one way data flow`],
+  link: 'https://spoyl.in',
+  technologies: ['vue js', 'node js', 'PWA', 'nuxt' , 'webpack' ]
+
+
+      },
         { company: 'Cracker Digital Media',
         icon: '',
         duration: 'Aug 2018 to Jan 1 2019',
         companyMoto: "Serivce based company. Worked for candian company actionable.co ",
         companydesc: "The Actionable Platform provides three key components that are essential for turning learning into new behaviors to drive business outcomes",
-       workDesc: [`Working on Reactjs - Creating data driven components.
+       workDesc: [`Worked on Reactjs - Creating data driven components.
        
-    `, `Working On Node Js and Graphql-framework  for creating mutations and  model  and managing REST API s as backend development.`],
-    link: 'http://actionable.in',
+    `, `Worked On Node Js and Graphql-framework  for creating mutations and  model  and managing REST API s as backend development.`],
+    link: 'http://actionable.co',
     technologies: ['react', 'node', 'redux', 'graphql' , 'relay', 'loopback' ]
 
   
@@ -25,8 +38,8 @@ const Projects = () => {
   
      icon: '',
      duration: 'Feb 2018 to Aug 2018',
-     workDesc: [`Working On Spring- JAVA-framework for creating and managing REST API s as backend development.
-     `, `Working on Reactjs - Creating data-driven components in Material-UI and used d3.js as chart ui for website, from csv files and APIs calls`
+     workDesc: [`Worked On Spring- JAVA-framework for creating and managing REST API s as backend development.
+     `, `Worked on Reactjs - Creating data-driven components in Material-UI and used d3.js as chart ui for website, from csv files and APIs calls`
      ,`Reduced component rendering time by 80% by implementing Tree data structure while fetching data through API, leading to 7.20 sec reduction in data fetch time from server` ],
      link: 'http://unifygoals.in',
      technologies: ['react', 'node', 'Spring boot', 'mysql' , 'D3 js', 'MUi' ]

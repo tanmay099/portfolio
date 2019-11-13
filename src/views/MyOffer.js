@@ -36,7 +36,7 @@ const MyOffer= () => {
   <li>Experience in SPA(single page application) load Optimization with technologies like <strong>Lazy laoding</strong> , <strong>tree shaking</strong>, SSR(server side rendering)</li>
 </ul>
 <Header as='h2' icon>
-      <Header.Content>4</Header.Content>      
+      <Header.Content>5</Header.Content>      
     <Header.Subheader>
      Applications
     </Header.Subheader>
@@ -55,7 +55,7 @@ const MyOffer= () => {
   <li>Dividing the servers into different machine nodes / docker containers; database sharding; load balancing</li>
 </ul>
 <Header as='h1' icon>
-      <Header.Content>4</Header.Content>      
+      <Header.Content>2</Header.Content>      
     <Header.Subheader>
      Applications
     </Header.Subheader>
@@ -72,7 +72,7 @@ const MyOffer= () => {
  <li>Experience with cloud deployment technologies like <strong>AWS EC2</strong>, <strong>Gcloud</strong>, <strong>Digital Ocean</strong></li>
 </ul>
 <Header as='h2' icon>
-      <Header.Content>4</Header.Content>      
+      <Header.Content>3</Header.Content>      
     <Header.Subheader>
      Applications
     </Header.Subheader>

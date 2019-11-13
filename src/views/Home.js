@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
  const Home = () => {
     useEffect(() => {})
-     return(<Grid.Column stretched className="home" largeScreen={12}  mobile={16} largeScreen={12}>
+     return(<Grid.Column stretched className="home"  mobile={16} largeScreen={12}>
       <Segment className="home-container" basic color="black">
          <Container className="home-tagline" text>
             <Header className="tagline" as="h1">
@@ -20,7 +20,7 @@ import {Link} from 'react-router-dom';
         
            <Button size={"big"} as={Link} to="/projects" inverted color='black'>Portfolio</Button>
            
-           <Button as={Link} to="/aboutme" className={"home-my-offer-button"} size={"big"} inverted color='black'>My offer</Button>
+           <Button as={Link} to="/myoffer" className={"home-my-offer-button"} size={"big"} inverted color='black'>My offer</Button>
         </Container>
 
       </Segment>

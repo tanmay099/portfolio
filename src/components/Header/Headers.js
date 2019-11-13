@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Grid, Menu, Image ,Icon ,  Header, Responsive, Segment, Button ,Dropdown , List, Sidebar, Divider, GridColumn} from 'semantic-ui-react'
 import '../Header/header.css'
-import profilepic from '../../../dist/assets/img/pro.jpg'
+import profilepic from '../../../dist/assets/img/pro2.jpg'
 
 import { useHistory} from 'react-router-dom'
 import { Link } from "react-router-dom";
@@ -67,22 +67,23 @@ export default  Headers = () => {
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='connect'
-              active={activeItem === 'connect'}
-              onClick={handleItemClick}
-            />
-            <Menu.Item
               name='myoffer'
               active={activeItem === 'myoffer'}
               onClick={handleItemClick}
             />
+            <Menu.Item
+              name='connect'
+              active={activeItem === 'connect'}
+              onClick={handleItemClick}
+            />
+            
           </Menu>
           <Segment basic textAlign="left">
-           <Icon  name="facebook" size='large'/> 
-           <Icon  name="twitter" size='large'/> 
-           <Icon  name="instagram" size='large'/> 
-           <Icon  name="github" size='large'/> 
-           <Icon  name="linkedin" size='large'/> 
+          <a href="https://www.facebook.com/tanmay09.sharma"><Icon  name="facebook" size='large'></Icon> </a>
+                  <a  href="https://twitter.com/Tanmay099" >  <Icon name="twitter" size='large' ></Icon></a>
+                  <a href="https://www.instagram.com/tanmay099/"> <Icon name="instagram" size='large' size='large'> </Icon></a>
+                  <a href="https://github.com/tanmay099" >  <Icon name="github" size='large'></Icon></a>
+                  <a href="https://www.linkedin.com/in/tanmay-sharma-5423a69b" > <Icon name="linkedin" size='large' > </Icon></a>
 
           </Segment>
           </div>

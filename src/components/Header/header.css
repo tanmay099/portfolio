@@ -3,7 +3,9 @@
     display: flex;
     flex-flow: column;
 } */
-
+.menu-main{
+ height: min-content;
+}
 .imgav{
     margin: auto;
 }
@@ -56,13 +58,24 @@
 .header-mobile {
     display: none !important;
 } 
+.header-desktop a{
+color: inherit !important;
+}
 }
 
 @media only screen and (max-width: 767px){
-
-    .menu_list{
+    .menu-top-item{
+        padding: 15px !important;
+    }
+    /* .menu_list{
         padding: 10px 10px 10px 0px;
         border-bottom: 1px solid black;
+    } */
+    .ui.grid>.stretched.row>.column{
+        display: contents !important;
+    }
+    .menu_list.on{
+      display: none !important;
     }
 
     .mobile_nav_top{
@@ -91,22 +104,53 @@
         display: none !important;    
  }
  #menu #list {
-    list-style: none;
-    max-height: 0 !important;
-    margin-top: 0 !important;
+   
+    height: 0;
+    
     padding-left: 20px !important;
-    margin-bottom: 0 !important;
-    transition: max-height 0.2s ease-out !important;
-    overflow: hidden !important;
-    /* background: #d5d5d5 !important; */
+    overflow: hidden;
+    transition: height .5s;
+}
+#menu ul{
+    list-style: none ;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 0;
 }
 
-#menu.on #list {
-    list-style: none;
-    padding-left: 20px !important;
-    max-height: 500px !important;
-    transition: max-height 0.5s ease-in !important;
+#menu a{
+    display: block;
+    cursor: pointer;
+    color: inherit !important;
 }
+#menu ul li {
+display: block;
+position: relative;
+text-align: right;
+cursor: pointer;
+font-size: 14px;
+padding: 10px 20px !important;
+
+
+}
+#menu ul li a {
+    color: black;
+    text-transform: capitalize;
+    
+}
+#menu.on #list {
+    border-top: 1px solid #999999;
+    list-style: none !important;
+    padding-left: 20px !important;
+    height: 107px !important;
+    
+}
+/* #menu #list_item_1{
+    display: none;
+}
+#menu.on #list_item_1{
+    display: inline;
+} */
  .header-mobile  {
      display: block !important;
      padding: 0 !important;
@@ -116,7 +160,9 @@
     .ui.menu {
         border: none !important;
     }
-    
+    /* .ui.menu::after{
+        display: none !important;
+    } */
     .ui.vertical.menu .item {
         border-top: 1px solid rgba(34,36,38,.15) !important;
         /* padding-top : 0  !important; */

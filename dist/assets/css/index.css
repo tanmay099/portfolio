@@ -62,8 +62,9 @@ html, body {
 
 .home-container{
     height: 100%;
-    background-image: url('https://picsum.photos/id/366/4000/3000') !important;
-    background-size: cover !important;
+    /* background-color: black; */
+    background-image: url('https://images.unsplash.com/flagged/photo-1573061598644-36432d1a4198?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60') !important;
+    /* background-size: contain !important; */
 }
 .no-display{
 display: none !important;
@@ -83,15 +84,16 @@ body{
     /* overflow-y:  scroll; */
 }
 .home{
-  padding: 0 !important;
+  padding-right: 0 !important;
+  /* display: contents !important; */
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 760px) {
   .parrent-conatiner {
     display: flex;
     flex-flow: row;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
 .main-navigation {
     font-size: 14px;
     text-transform: uppercase;
