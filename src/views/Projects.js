@@ -71,7 +71,7 @@ const Projects = () => {
   
   }
     return(  <Responsive  as={Grid.Column}  largeScreen={12}  mobile={16} largeScreen={12}>
-      <Segment className={'container'} >
+      <Segment className={'container'} color="black">
       <Grid divided>
       <Grid.Column >
       <Header as='h1'>

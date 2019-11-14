@@ -6,11 +6,14 @@ import profilepic from '../../../dist/assets/img/pro2.jpg'
 import { useHistory} from 'react-router-dom'
 import { Link } from "react-router-dom";
 
+import cv from '../.././../dist/assets/img/Resume_TanmaySharma.pdf'
+
 
 const HeaderMobile = () => {
     const [activeItem , setActiveItem ] = useState('home')
   const [openM, setOpenM] = useState(false);
   const headerToggle = useState(false);
+  
 
   useEffect(() => {
     console.log(screen.width)
@@ -44,7 +47,7 @@ const HeaderMobile = () => {
                  children={<div className="menu-top-item">
                    
                    <Image src={profilepic} className="profilePic" centered size={"small"} circular/>
-                 <Header as='h2' textAlign="center">
+                 <Header className="myname" as='h2' textAlign="center">
                 
                  Tanmay Sharma
                  <Header.Subheader>
@@ -80,12 +83,15 @@ const HeaderMobile = () => {
                     <li id="list_item_1" className="menu_list" ><Link  to="/myoffer">My offer</Link></li>
                      <li className="menu_list"><Link to="/projects">Projects</Link></li>
                      <li className="menu_list" ><Link to="/connect">Connect</Link></li>
+                     <li className="menu_list"><form className="download_cv_form" action={cv}><input className="downloadcv"  type="submit" value="Download CV"/></form>
+             </li>
                 </ul>
                 </div>
             </div>
               }>
 
                </Menu.Item>
+
                </Menu>
      </Grid.Column>
            

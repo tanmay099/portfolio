@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Grid, Menu, Image ,Icon ,  Header, Responsive, Segment, Button ,Dropdown , List, Sidebar, Divider, GridColumn} from 'semantic-ui-react'
 import '../Header/header.css'
 import profilepic from '../../../dist/assets/img/pro2.jpg'
+import cv from '../.././../dist/assets/img/Resume_TanmaySharma.pdf'
 
 import { useHistory} from 'react-router-dom'
 import { Link } from "react-router-dom";
@@ -10,6 +11,7 @@ export default  Headers = () => {
   const [activeItem , setActiveItem ] = useState('home')
   const [openM, setOpenM] = useState(false);
   const headerToggle = useState(false);
+  
 
   useEffect(() => {
     console.log(screen.width)
@@ -31,7 +33,11 @@ export default  Headers = () => {
     setActiveItem(name)
     return  history.push( name ==='home' ? "/" : "/" + name)
 }
-
+function handleFile(){
+  return <form action={cv}>
+  <input className=" downloadcv" type="submit" value="DownloadCV"></input>
+</form>
+}
  
 
     return (
@@ -42,7 +48,7 @@ export default  Headers = () => {
           <Menu.Item
               children={<div>
                 <Image src={profilepic} className="profilePic" centered size={"small"} circular/>
-              <Header as='h2' textAlign="center">
+              <Header className="myname" as='h2' textAlign="center">
              
               Tanmay Sharma
               <Header.Subheader>
@@ -62,20 +68,26 @@ export default  Headers = () => {
               onClick={handleItemClick}
             /> */}
             <Menu.Item
+            className="menu_item_desk"
               name='projects'
               active={activeItem === 'projects'}
               onClick={handleItemClick}
             />
             <Menu.Item
+            className="menu_item_desk"
               name='myoffer'
               active={activeItem === 'myoffer'}
               onClick={handleItemClick}
             />
             <Menu.Item
+            className="menu_item_desk"
               name='connect'
               active={activeItem === 'connect'}
               onClick={handleItemClick}
             />
+             <Menu.Item className="menu_item_desk" as="form" action={cv}>
+               <input className="downloadcv"  type="submit" value="Download CV"/>
+             </Menu.Item>
             
           </Menu>
           <Segment basic textAlign="left">

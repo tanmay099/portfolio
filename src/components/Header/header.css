@@ -33,7 +33,16 @@
 .nav-link:last-child {
     padding: 10px 10px 0 10px!important;
 } 
-
+.menu_item_desk{
+    font-size: 16px;
+    font-family: Montserrat !important;
+    /* font-weight: 600 !important; */
+    /* color:  #333333 !important; */
+}
+.menu_item_desk:hover{
+    /* font-weight: 900 !important; */
+    /* color: blue !important; */
+}
 .nav-menu-item {
     /* height: 40px !important; */
 /* padding: 12px 0 12px 30px !important; */
@@ -49,11 +58,20 @@
         display: none !important;
     } */
 /* } */
+.myname{
+    font-family: Montserrat !important;
+}
 @media only screen and (min-width: 760px){
 .header-desktop {
        display: flex !important;  
 
 }
+.downloadcv{
+    font-size: 16px;
+    border: none;
+    margin-left: -8px;
+  }
+  
 
 .header-mobile {
     display: none !important;
@@ -64,6 +82,17 @@ color: inherit !important;
 }
 
 @media only screen and (max-width: 767px){
+
+    .download_cv_form{
+        
+    }
+   form .downloadcv{
+        font-size: 14px;
+        border: none;
+        margin-right: -8px;
+        background-color: white !important;
+      }
+      
     .menu-top-item{
         padding: 15px !important;
     }
@@ -135,6 +164,8 @@ padding: 10px 20px !important;
 }
 #menu ul li a {
     color: black;
+    font-weight: 900;
+     font-family: Montserrat !important;
     text-transform: capitalize;
     
 }
@@ -142,7 +173,7 @@ padding: 10px 20px !important;
     border-top: 1px solid #999999;
     list-style: none !important;
     padding-left: 20px !important;
-    height: 107px !important;
+    height: 140px !important;
     
 }
 /* #menu #list_item_1{
