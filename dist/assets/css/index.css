@@ -44,9 +44,7 @@ html, body {
 .home-my-offer-button{
     margin-left:  20px !important;
 }
-.app-grid-row {
-    /* padding: 0 !important; */
-}
+
 
 .tech-tile{
     margin: 5px !important;
@@ -87,7 +85,7 @@ body{
   padding-right: 0 !important;
   /* display: contents !important; */
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   .parrent-conatiner {
     display: flex;
     flex-flow: row;
@@ -98,6 +96,12 @@ body{
 }
 }
 @media screen and (max-width: 767px) {
+    .my_offer_header_mobile{
+        font-size: 20px !important;
+    }
+    .ui.container{
+        margin: 0 !important;
+    }
     .home-container{
         background-image: url('https://images.unsplash.com/photo-1552370841-fbcb98e3bd4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80') !important;
     }

@@ -9,7 +9,7 @@ const Projects = () => {
       icon: '',
       duration: 'Mar 2019 to NOW',
       companyMoto: "Spoyl, India's largest influencer-led fashion e-commerce platform",
-      companydesc: "Influencers curated cloth and beauty collection",
+      companydesc: "Influencers curated clothing and beauty collection launching on e-commerce digital front.",
      workDesc: [`Working on Vue JS - Creating data driven templates with the concepts of lazy loading.
      
   `, `Developing PWA(progressive web app) with NUXT framwork for web platform. with optimized one way data flow`],
@@ -21,8 +21,8 @@ const Projects = () => {
         { company: 'Cracker Digital Media',
         icon: '',
         duration: 'Aug 2018 to Jan 1 2019',
-        companyMoto: "Serivce based company. Worked for candian company actionable.co ",
-        companydesc: "The Actionable Platform provides three key components that are essential for turning learning into new behaviors to drive business outcomes",
+        companyMoto: "Serivce based company. Worked for candian client company actionable.co ",
+        companydesc: "The Actionable Platform provides key components that are essential for turning learning into new behaviors to drive business outcomes",
        workDesc: [`Worked on Reactjs - Creating data driven components.
        
     `, `Worked On Node Js and Graphql-framework  for creating mutations and  model  and managing REST API s as backend development.`],
@@ -70,8 +70,8 @@ const Projects = () => {
       ]
   
   }
-    return(  <Responsive  as={Grid.Column}  largeScreen={12}  mobile={16} largeScreen={12}>
-      <Segment className={'container'} color="black">
+    return(  <Responsive  as={Grid.Column} stretched largeScreen={12}  mobile={16} largeScreen={12}>
+      <Segment basic className={'container'} largeScreen={12}  mobile={16} largeScreen={12} color="black">
       <Grid divided>
       <Grid.Column >
       <Header as='h1'>

@@ -23,8 +23,8 @@ const hist = createBrowserHistory();
  }
 ReactDOM.render(
 <Router history={hist}>
-     <Grid stretched className="app-grid">
-         <Grid.Row stretched className="app-grid-row">
+     <Grid  className="app-grid">
+         <Grid.Row className="app-grid-row">
      <Responsive as={Headers} minWidth={767}/> 
  <Responsive as={HeaderMobile} maxWidth={766}/> 
 
