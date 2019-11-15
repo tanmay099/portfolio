@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Segment, Icon, Header, Container, Divider, GridColumn, List } from 'semantic-ui-react'
+import { Grid, Segment, Icon, Header, Container, Divider, List } from 'semantic-ui-react'
 const Connect = () => {
     return(<Grid.Column stretched  largeScreen={12}  mobile={16} largeScreen={12}>
       <Segment  className="para-text" basic color="black">

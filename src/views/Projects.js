@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid, Segment, Label, Header ,Icon, Container,Divider, Button, Image, Responsive, GridRow, Message} from 'semantic-ui-react'
-import '../../dist/assets/css/index.css'
+import { Grid, Segment, Label, Header ,Icon, Container,Divider, Button, Responsive,  Message} from 'semantic-ui-react'
+import '../../public/assets/css/index.css'
 const Projects = () => {
 
   function getSteps() {
@@ -9,10 +9,10 @@ const Projects = () => {
       icon: '',
       duration: 'Mar 2019 to NOW',
       companyMoto: "Spoyl, India's largest influencer-led fashion e-commerce platform",
-      companydesc: "Influencers curated clothing and beauty collection launching on e-commerce digital front.",
+      companydesc: "Influencer curated clothing and beauty collection launching on e-commerce digital front.",
      workDesc: [`Working on Vue JS - Creating data driven templates with the concepts of lazy loading.
      
-  `, `Developing PWA(progressive web app) with NUXT framwork for web platform. with optimized one way data flow`],
+  `, `Developing PWA(progressive web app) with NUXT JS framwork for web platform. with optimized one way data flow`],
   link: 'https://spoyl.in',
   technologies: ['vue js', 'node js', 'PWA', 'nuxt' , 'webpack' ]
 
@@ -21,11 +21,11 @@ const Projects = () => {
         { company: 'Cracker Digital Media',
         icon: '',
         duration: 'Aug 2018 to Jan 1 2019',
-        companyMoto: "Serivce based company. Worked for candian client company actionable.co ",
+        companyMoto: "Serivce based company. Worked for canadian client company actionable.co ",
         companydesc: "The Actionable Platform provides key components that are essential for turning learning into new behaviors to drive business outcomes",
-       workDesc: [`Worked on Reactjs - Creating data driven components.
+       workDesc: [`Worked on React JS - Creating data driven components.
        
-    `, `Worked On Node Js and Graphql-framework  for creating mutations and  model  and managing REST API s as backend development.`],
+    `, `Worked On Node Js and Graphql-framework for creating mutations and model and managing REST APIs as backend development.`],
     link: 'http://actionable.co',
     technologies: ['react', 'node', 'redux', 'graphql' , 'relay', 'loopback' ]
 
@@ -39,18 +39,18 @@ const Projects = () => {
      icon: '',
      duration: 'Feb 2018 to Aug 2018',
      workDesc: [`Worked On Spring- JAVA-framework for creating and managing REST API s as backend development.
-     `, `Worked on Reactjs - Creating data-driven components in Material-UI and used d3.js as chart ui for website, from csv files and APIs calls`
+     `, `Worked on React JS - Creating data-driven components in Material-UI and used d3.js as chart ui for website, from csv files and APIs calls`
      ,`Reduced component rendering time by 80% by implementing Tree data structure while fetching data through API, leading to 7.20 sec reduction in data fetch time from server` ],
-     link: 'http://unifygoals.in',
+     link: 'http://unifygoals.com',
      technologies: ['react', 'node', 'Spring boot', 'mysql' , 'D3 js', 'MUi' ]
         }
         ,{
      company: 'FamsousEnuf',
-     companyMoto: "Funded By Facebook thorugh FB Start program,",
-     companydesc: 'World of mouth marketing at scale through facebook microfiluencers',
+     companyMoto: "Funded By Facebook through FB Start program,",
+     companydesc: 'World of mouth marketing at scale through facebook micro-influencer',
      icon: '',   
      duration: 'Aug 2017 to Feb 2018',
-     workDesc: [`Worked on Reactjs and Nodejs -Created Responsive web pages for the landing screen of startup website and Deployed it and managed REST API for the website
+     workDesc: [`Worked on React JS and Nodejs -Created Responsive web pages for the landing screen of startup website and Deployed it and managed REST API for the website
     `],
     link: 'http://famousenuf.com',
     technologies: ['react', 'node', 'Spring boot', 'mysql' , 'D3 js', 'MUI' ]
@@ -84,7 +84,8 @@ const Projects = () => {
  </Grid>
  <Divider/>
           <Grid >
-{getSteps().map((label , index)=> (<Grid.Row divided key={index}>
+{getSteps().map((label , index)=> (
+<Grid.Row divided key={index}>
               <Grid.Column  largeScreen={3}  mobile={16} largeScreen={3}>
                 <Container className="timeline-time" text>
                 <Responsive as={Divider} horizontal {...Responsive.onlyMobile}>

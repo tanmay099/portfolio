@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import { Grid, Menu, Image ,Icon ,  Header, Responsive, Segment, Button ,Dropdown , List, Sidebar, Divider, GridColumn} from 'semantic-ui-react'
-import '../Header/header.css'
-import profilepic from '../../../dist/assets/img/pro2.jpg'
-import cv from '../.././../dist/assets/img/Resume_TanmaySharma.pdf'
+import React, { lazy, useState, useEffect, Suspense } from 'react'
+import { Grid, Menu, Image ,Icon ,  Header, Responsive, Segment} from 'semantic-ui-react'
+import '../../../public/assets/css/header.css'
+import cv from '../.././../public/assets/img/Resume_TanmaySharma.pdf'
 
 import { useHistory} from 'react-router-dom'
 import { Link } from "react-router-dom";
@@ -47,14 +46,16 @@ function handleFile(){
           <Menu fluid vertical tabular>
           <Menu.Item
               children={<div>
-                <Image src={profilepic} className="profilePic" centered size={"small"} circular/>
+              <Image src={'https://i.pinimg.com/564x/dd/77/5c/dd775ced9dd88ed013acb09604582c80.jpg'} className="profilePic" centered size={"small"} circular/> 
               <Header className="myname" as='h2' textAlign="center">
              
               Tanmay Sharma
               <Header.Subheader>
                 Full-Stack Developer
               </Header.Subheader>
-            </Header></div>}
+            </Header>
+            
+            </div>}
               name='home'
               fitted="horizontally"
               active={activeItem === 'home'}

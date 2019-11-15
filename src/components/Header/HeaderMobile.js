@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react'
-
-import { Grid, Menu, Image ,Icon ,  Header, Responsive, Segment, Button ,Dropdown , List, Sidebar, Divider, GridColumn} from 'semantic-ui-react'
-import profilepic from '../../../dist/assets/img/pro2.jpg'
-
+import { Grid, Menu, Image ,Icon ,  Header, Responsive, } from 'semantic-ui-react'
 import { useHistory} from 'react-router-dom'
 import { Link } from "react-router-dom";
-
-import cv from '../.././../dist/assets/img/Resume_TanmaySharma.pdf'
+import cv from '../.././../public/assets/img/Resume_TanmaySharma.pdf'
 
 
 const HeaderMobile = () => {
@@ -46,7 +42,7 @@ const HeaderMobile = () => {
     <Menu.Item
                  children={<div className="menu-top-item">
                    
-                   <Image src={profilepic} className="profilePic" centered size={"small"} circular/>
+                   <Image src={'https://i.pinimg.com/564x/dd/77/5c/dd775ced9dd88ed013acb09604582c80.jpg'} className="profilePic" centered size={"small"} circular/>
                  <Header className="myname" as='h2' textAlign="center">
                 
                  Tanmay Sharma

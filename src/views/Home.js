@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import  '../../dist/assets/css/index.css'
+import  '../../public/assets/css/index.css'
 import { Grid, Segment, Header, Container, Button } from 'semantic-ui-react'
 import {Link} from 'react-router-dom';
 
