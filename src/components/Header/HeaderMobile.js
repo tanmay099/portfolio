@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Grid, Menu, Image ,Icon ,  Header, Responsive, } from 'semantic-ui-react'
 import { useHistory} from 'react-router-dom'
 import { Link } from "react-router-dom";
-import cv from '../.././../public/assets/img/Resume_TanmaySharma.pdf'
 
 
 const HeaderMobile = () => {
@@ -79,7 +78,7 @@ const HeaderMobile = () => {
                     <li id="list_item_1" className="menu_list" ><Link  to="/myoffer">My offer</Link></li>
                      <li className="menu_list"><Link to="/projects">Projects</Link></li>
                      <li className="menu_list" ><Link to="/connect">Connect</Link></li>
-                     <li className="menu_list"><form className="download_cv_form" action={cv}><input className="downloadcv"  type="submit" value="Download CV"/></form>
+                     <li className="menu_list"><a href="https://drive.google.com/file/d/1Re1slryhQeag1FucD2IIT3HrUnxA2Yt5/view?usp=sharing" className="download_cv_form" >DownlandCV</a>
              </li>
                 </ul>
                 </div>

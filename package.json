@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack -p --config webpack.prod.js",
+    "analyze": "webpack --profile --json --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -25,17 +26,19 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
-    "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.1",
+    "source-map-explorer": "^2.1.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0",
-    "webpack-merge": "^4.2.2"
+    "webpack-merge": "^4.2.2",
+    "workbox-webpack-plugin": "^4.3.1"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "lodash": "^4.17.15",
-    "source-map-explorer": "^2.1.0"
+    "semantic-ui-css": "^2.4.1"
   }
 }

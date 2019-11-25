@@ -1,15 +1,12 @@
 import React, { lazy, useState, useEffect, Suspense } from 'react'
 import { Grid, Menu, Image ,Icon ,  Header, Responsive, Segment} from 'semantic-ui-react'
 import '../../../public/assets/css/header.css'
-import cv from '../.././../public/assets/img/Resume_TanmaySharma.pdf'
 
 import { useHistory} from 'react-router-dom'
-import { Link } from "react-router-dom";
 
 export default  Headers = () => {
   const [activeItem , setActiveItem ] = useState('home')
   const [openM, setOpenM] = useState(false);
-  const headerToggle = useState(false);
   
 
   useEffect(() => {
@@ -40,7 +37,7 @@ function handleFile(){
  
 
     return (
-      <Grid.Column className={"header-desktop"} stretched  largeScreen={4} widescreen={4}>
+      <Grid.Column className={"header-desktop"} stretched mobile={0} largeScreen={4} widescreen={4}>
         <div className="header-class 
         ">
           <Menu fluid vertical tabular>
@@ -86,8 +83,8 @@ function handleFile(){
               active={activeItem === 'connect'}
               onClick={handleItemClick}
             />
-             <Menu.Item className="menu_item_desk" as="form" action={cv}>
-               <input className="downloadcv"  type="submit" value="Download CV"/>
+             <Menu.Item className="menu_item_desk" >
+             <a href="https://drive.google.com/fileaction={cv}/d/1Re1slryhQeag1FucD2IIT3HrUnxA2Yt5/view?usp=sharing" className="downloadcv" >DownlandCV</a>
              </Menu.Item>
             
           </Menu>

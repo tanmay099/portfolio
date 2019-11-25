@@ -1,5 +1,8 @@
 const path = require('path');
-//  const { CleanWebpackPlugin  }  = require('clean-webpack-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
+const { CleanWebpackPlugin  }  = require('clean-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 
 module.exports = {
     entry: './src/index.js',
@@ -43,6 +46,15 @@ module.exports = {
       }
   },
   plugins: [ 
-    //  new CleanWebpackPlugin()
-  ]
+    // new BundleAnalyzerPlugin(),
+    new CleanWebpackPlugin(),
+    new WorkboxPlugin.InjectManifest({
+      swSrc: './service-worker.js'
+    })
+  ],
+  // optimization: {
+  //       splitChunks: {
+  //          chunks: 'all',
+  //        },
+  //      },
 };

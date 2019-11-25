@@ -1,6 +1,8 @@
 
 html, body {
     height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 /* .home {
     color: yellow;
@@ -19,6 +21,10 @@ html, body {
 .app-grid{
     height: inherit !important;
    
+}
+
+.app-grid-row{
+    padding-bottom: 0 !important;
 }
 .home-tagline{
     margin-top: 20% !important;

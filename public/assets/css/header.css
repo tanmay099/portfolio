@@ -47,17 +47,8 @@
     /* height: 40px !important; */
 /* padding: 12px 0 12px 30px !important; */
 }
-/* @media screen and (min-width: 801px) {
-    .header-desktop{
-        display: block;
-    }
-}
 
-@media screen and (max-width: 800px) {
-    .header-desktop{
-        display: none !important;
-    } */
-/* } */
+
 .myname{
     font-family: Montserrat !important;
 }
@@ -83,9 +74,6 @@ color: inherit !important;
 
 @media only screen and (max-width: 767px){
 
-    .download_cv_form{
-        
-    }
    form .downloadcv{
         font-size: 14px;
         border: none;
@@ -128,6 +116,9 @@ color: inherit !important;
     justify-content: flex-end;
      padding: 5px 15px 5px 0px !important; 
     flex: 1 2 40%;
+}
+.header-class{
+    display: none;
 }
  .header-desktop {
         display: none !important;    
@@ -185,8 +176,7 @@ padding: 10px 20px !important;
  .header-mobile  {
      display: block !important;
      padding: 0 !important;
-
- } 
+} 
  
     .ui.menu {
         border: none !important;
