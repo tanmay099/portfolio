@@ -47,7 +47,7 @@ module.exports = {
   },
   plugins: [ 
     // new BundleAnalyzerPlugin(),
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     new WorkboxPlugin.InjectManifest({
       swSrc: './service-worker.js'
     })
