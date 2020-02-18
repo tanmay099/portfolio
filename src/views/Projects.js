@@ -18,7 +18,7 @@ const Projects = () => {
 
 
       },
-        { company: 'Cracker Digital Media',
+        { company: 'Cracker Digital Media(Contract)',
         icon: '',
         duration: 'Aug 2018 to Jan 1 2019',
         companyMoto: "Serivce based company. Worked for canadian client company actionable.co ",
@@ -53,14 +53,14 @@ const Projects = () => {
      workDesc: [`Worked on React JS and Nodejs -Created Responsive web pages for the landing screen of startup website and Deployed it and managed REST API for the website
     `],
     link: 'http://famousenuf.com',
-    technologies: ['react', 'node', 'Spring boot', 'mysql' , 'D3 js', 'MUI' ]
+    technologies: ['react', 'node', 'AWS', 'mysql' ]
         },
         {
-      company :'Salk health care',
+      company :'Salk health care(Freelancer)',
      companyMoto: "Product to create individual healthcare client's digital platform",
      companydesc: 'Create your Healthcare Brand Tools to digitize your Medical Practice',
      icon: '',
-     duration: 'Mar 2019 to NOW',
+     duration: '2 months (2018)',
      workDesc: [`Worked On the Android app- worked on material design UI for the app and maintained api call for data rendering in to the apps ui
      ` ],
      link: 'https://www.salk.healthcare/',

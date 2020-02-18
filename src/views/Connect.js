@@ -36,7 +36,7 @@ const Connect = () => {
   <Divider/>
   <Header as='h4' >
     <Icon name='at' color="red" />
-    <Header.Content>tanmay1844.sharma@gmail.com</Header.Content>
+    <Header.Content>iam@tanmay099.com</Header.Content>
   
   </Header>
   <Divider/>

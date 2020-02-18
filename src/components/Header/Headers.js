@@ -84,7 +84,7 @@ function handleFile(){
               onClick={handleItemClick}
             />
              <Menu.Item className="menu_item_desk" >
-             <a href="https://drive.google.com/fileaction={cv}/d/1Re1slryhQeag1FucD2IIT3HrUnxA2Yt5/view?usp=sharing" className="downloadcv" >DownlandCV</a>
+             <a href="https://drive.google.com/file/d/19nZLrD2H9XfAfWFG2ew2sZP-5JV_-O8Z/view?usp=sharing" className="downloadcv" >DownlandCV</a>
              </Menu.Item>
             
           </Menu>
