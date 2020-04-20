@@ -8,7 +8,8 @@
     "dev": "webpack-dev-server --open --config webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -p --config webpack.prod.js",
-    "analyze": "webpack --profile --json --config webpack.prod.js"
+    "analyze": "webpack --profile --json --config webpack.prod.js",
+    "deploy": "npm run build && aws s3 cp dist/ s3://tanmay099.com --recursive"
   },
   "keywords": [],
   "author": "",
@@ -39,6 +40,7 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "html-webpack-plugin": "^3.2.0",
     "lodash": "^4.17.15",
     "semantic-ui-css": "^2.4.1"
   }
