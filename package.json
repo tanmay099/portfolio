@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "dev": "webpack-dev-server --open --config webpack.dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack -p --config webpack.prod.js",
     "analyze": "webpack --profile --json --config webpack.prod.js",
     "deploy": "npm run build && aws s3 cp dist/ s3://tanmay099.com --recursive"
