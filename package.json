@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --open --config ./config/webpack.dev.js",
     "dev": "webpack-dev-server --open --config ./config/webpack.dev.js",
     "test": "jest --passWithNoTests",
-    "build": "webpack -p --config webpack.prod.js",
+    "build": "webpack -p --config ./config/webpack.prod.js",
     "analyze": "webpack --profile --json --config ./config/webpack.prod.js",
     "deploy": "yarn run build && aws s3 cp dist/ s3://tanmay099.com --recursive"
   },
@@ -40,10 +40,11 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "copy-webpack-plugin": "^5.1.1",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^25.4.0",
     "lodash": "^4.17.15",
+    "request": "^2.88.2",
     "semantic-ui-css": "^2.4.1"
   }
 }
