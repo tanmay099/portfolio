@@ -9,47 +9,44 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist")
+    filename: "[name].[hash].bundle.js",
+    path: path.resolve(__dirname, "..", "dist"),
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
-        use: ["babel-loader"]
+        use: ["babel-loader"],
       },
 
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|svg|jpg|gif|pdf)$/,
-        use: ["file-loader"]
+        use: ["file-loader"],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ["file-loader"]
-      }
-    ]
+        use: ["file-loader"],
+      },
+    ],
   },
   resolve: {
     extensions: ["*", ".js", ".jsx"],
     alias: {
-      "react-dom": "@hot-loader/react-dom"
-    }
+      "react-dom": "@hot-loader/react-dom",
+    },
   },
   plugins: [
-    // new HtmlWebpackPlugin({
-    //   inject: "body" || "head",
-    //   title: "Tanmay Sharma"
-    // }),
+    new HtmlWebpackPlugin({ template: "./public/index.html" }),
     // new BundleAnalyzerPlugin(),
     new WorkboxPlugin.InjectManifest({
-      swSrc: "./service-worker.js"
-    })
-  ]
+      swSrc: "./service-worker.js",
+    }),
+  ],
   // optimization: {
   //       splitChunks: {
   //          chunks: 'all',
