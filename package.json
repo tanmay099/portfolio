@@ -8,6 +8,7 @@
     "dev": "webpack-dev-server --open --config ./config/webpack.dev.js",
     "test": "jest --passWithNoTests",
     "build": "webpack -p --config ./config/webpack.prod.js",
+    "cpToDist": "cp  public/manifest.json ./dist && cp -r ./public/assets/images ./dist",
     "analyze": "webpack --profile --json --config ./config/webpack.prod.js",
     "deploy": "yarn run build && aws s3 cp dist/ s3://tanmay099.com --recursive"
   },
