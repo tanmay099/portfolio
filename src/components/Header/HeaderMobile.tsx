@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Grid, Menu, Image, Icon, Header, Responsive } from "semantic-ui-react";
-import { useHistory } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const HeaderMobile = () => {
   const [activeItem, setActiveItem] = useState("home");
@@ -12,7 +12,7 @@ const HeaderMobile = () => {
     console.log(screen.width);
     console.log(Responsive.onlyMobile.maxWidth > screen.width);
   });
-  let history = useHistory();
+  let history = useRouter();
   function toggleFunc() {
     console.log("open value", openM);
     return setOpenM(!openM);
@@ -94,13 +94,19 @@ const HeaderMobile = () => {
               <div id="list">
                 <ul>
                   <li id="list_item_1" className="menu_list">
-                    <Link to="/myoffer">My offer</Link>
+                    {/* <Link href="/myoffer">
+                      <a>My offer</a>
+                    </Link> */}
                   </li>
                   <li className="menu_list">
-                    <Link to="/projects">Projects</Link>
+                    {/* <Link href="/projects">
+                      <a>Projects</a>
+                    </Link> */}
                   </li>
                   <li className="menu_list">
-                    <Link to="/connect">Connect</Link>
+                    {/* <Link href="/connect">
+                      <a>Connect</a>
+                    </Link> */}
                   </li>
                   <li className="menu_list">
                     <a
