@@ -18,30 +18,22 @@ const Home = () => {
           </Header>
         </Container>
         <Container as="div" className="home-tagline-button" text>
-          {/* <Button
-            size={"big"}
-            as={Link}
-            href="/projects"
-            inverted
-            color="black"
-            children={}
-          ></Button> */}
           <Link href="/projects">
-            <a>Portfolio</a>
+            <Button size={"big"} as="a" inverted color="black">
+              Portfolio
+            </Button>
           </Link>
           <Link href="/myoffer">
-            <a>My offer</a>
+            <Button
+              as={"a"}
+              className={"home-my-offer-button"}
+              size={"big"}
+              inverted
+              color="black"
+            >
+              My offer
+            </Button>
           </Link>
-
-          {/* <Button
-            as={Link}
-            href="/myoffer"
-            className={"home-my-offer-button"}
-            size={"big"}
-            inverted
-            color="black"
-            children={<a>My offer</a>}
-          ></Button> */}
         </Container>
       </Segment>
     </Grid.Column>

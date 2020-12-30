@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 
 import { Grid } from "semantic-ui-react";
 // components with lazy
-const Home = dynamic(() => import("../views/Home"));
+const Home = dynamic(() => import("./home"));
 // const MyOffer = lazy(() => import("../src/views/MyOffer.js"));
 // const Projects = lazy(() => import("../src/views/Projects.js"));
 // const Connect = lazy(() => import("../src/views/Connect.js"));

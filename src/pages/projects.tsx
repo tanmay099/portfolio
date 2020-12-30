@@ -11,7 +11,7 @@ import {
   Responsive,
   Message,
 } from "semantic-ui-react";
-import "../../public/assets/css/index.css";
+
 const Projects = () => {
   function getSteps() {
     return [

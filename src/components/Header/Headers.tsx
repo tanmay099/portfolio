@@ -8,7 +8,6 @@ import {
   Responsive,
   Segment,
 } from "semantic-ui-react";
-import "../../../public/assets/css/header.module.css";
 
 import { useRouter } from "next/router";
 

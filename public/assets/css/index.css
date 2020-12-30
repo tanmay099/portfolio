@@ -1,9 +1,9 @@
-
-html, body {
-    height: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 /* .home {
     color: yellow;
     font-size: 40px;
@@ -14,79 +14,76 @@ html, body {
   
 
 } */
-#app{
-   height: 100%;
-    
+#app {
+  height: 100%;
 }
-.app-grid{
-    height: inherit !important;
-   
+.app-grid {
+  height: inherit !important;
 }
 
-.app-grid-row{
-    padding-bottom: 0 !important;
-}
-.home-tagline{
-    margin-top: 20% !important;
+#__next {
+  height: 100%;
 }
 
-.tagline{
-    color: white !important;
-    font-family: Montserrat !important;
+.app-grid-row {
+  padding-bottom: 0 !important;
+}
+.home-tagline {
+  margin-top: 20% !important;
 }
 
-.barIcon{
-    float: right !important;
-    padding-right: 35px !important;
+.tagline {
+  color: white !important;
+  font-family: Montserrat !important;
 }
 
-.home-tagline-button{
-    margin-top: 5%;
-   
-
+.barIcon {
+  float: right !important;
+  padding-right: 35px !important;
 }
 
-.home-my-offer-button{
-    margin-left:  20px !important;
+.home-tagline-button {
+  margin-top: 5%;
 }
 
-
-.tech-tile{
-    margin: 5px !important;
+.home-my-offer-button {
+  margin-left: 20px !important;
 }
 
-.para-text{
-    font-size: 16px !important;
-
-}
-.workdesc{
-    font-size: 16px !important;
+.tech-tile {
+  margin: 5px !important;
 }
 
-.home-container{
-    height: 100%;
-    /* background-color: black; */
-    /* background-image: url('https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=914&q=80'); */
-    /* background-size: contain !important; */
+.para-text {
+  font-size: 16px !important;
 }
-.no-display{
-display: none !important;
+.workdesc {
+  font-size: 16px !important;
 }
 
-.show-display{
-    display: block !important;
+.home-container {
+  height: 100%;
+  /* background-color: black; */
+  /* background-image: url('https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=914&q=80'); */
+  /* background-size: contain !important; */
+}
+.no-display {
+  display: none !important;
 }
 
-body{
-    /* font-family: Montserrat; */
-    margin: 0 !important;
-    
+.show-display {
+  display: block !important;
 }
 
-.container{
-    /* overflow-y:  scroll; */
+body {
+  /* font-family: Montserrat; */
+  margin: 0 !important;
 }
-.home{
+
+.container {
+  /* overflow-y:  scroll; */
+}
+.home {
   padding-right: 0 !important;
   /* display: contents !important; */
 }
@@ -95,34 +92,32 @@ body{
     display: flex;
     flex-flow: row;
   }
-  .home-container{
-      background-size: cover !important;
-    background-image: url('https://images.unsplash.com/photo-1553460017-8917b6b478d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60') !important;
-
-}
+  .home-container {
+    background-size: cover !important;
+    background-image: url("https://images.unsplash.com/photo-1553460017-8917b6b478d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") !important;
+  }
 }
 @media screen and (max-width: 767px) {
-    .my_offer_header_mobile{
-        font-size: 20px !important;
-    }
-    
-    .home-container{
-        background-size: cover !important;
-        background-image: url('https://images.unsplash.com/photo-1552370841-fbcb98e3bd4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80') !important;
-    }
-.main-navigation {
+  .my_offer_header_mobile {
+    font-size: 20px !important;
+  }
+
+  .home-container {
+    background-size: cover !important;
+    background-image: url("https://images.unsplash.com/photo-1552370841-fbcb98e3bd4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80") !important;
+  }
+  .main-navigation {
     font-size: 14px;
     text-transform: uppercase;
     line-height: 50px;
     text-align: right;
     margin: 20px -40px 0;
-}
-.main-navigation {
+  }
+  .main-navigation {
     margin: 45px -40px;
     line-height: 30px;
     position: relative;
     font-size: 14px;
     text-transform: uppercase;
-}
-
+  }
 }
