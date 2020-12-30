@@ -72,7 +72,7 @@ const HeaderMobile = () => {
                   </a>
                   <a href="https://www.instagram.com/tanmay099/">
                     {" "}
-                    <Icon name="instagram" size="large" size="large">
+                    <Icon name="instagram" size="large">
                       {" "}
                     </Icon>
                   </a>

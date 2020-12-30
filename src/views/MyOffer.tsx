@@ -9,7 +9,7 @@ import {
 } from "semantic-ui-react";
 const MyOffer = () => {
   return (
-    <Grid.Column stretched largeScreen={12} mobile={16} largeScreen={12}>
+    <Grid.Column stretched largeScreen={12} mobile={16}>
       <Segment className="para-text" basic color="black">
         <Container fluid>
           <Header as="h1">

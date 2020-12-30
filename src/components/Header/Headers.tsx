@@ -12,7 +12,7 @@ import "../../../public/assets/css/header.module.css";
 
 import { useRouter } from "next/router";
 
-export default Headers = () => {
+const Headers = () => {
   const [activeItem, setActiveItem] = useState("home");
   const [openM, setOpenM] = useState(false);
 
@@ -36,7 +36,7 @@ export default Headers = () => {
   }
   function handleFile() {
     return (
-      <form action={cv}>
+      <form>
         <input className=" downloadcv" type="submit" value="DownloadCV"></input>
       </form>
     );
@@ -46,6 +46,7 @@ export default Headers = () => {
     <Grid.Column
       className={"header-desktop"}
       stretched
+      //@ts-ignore
       mobile={0}
       largeScreen={4}
       widescreen={4}
@@ -120,7 +121,7 @@ export default Headers = () => {
           </a>
           <a href="https://www.instagram.com/tanmay099/">
             {" "}
-            <Icon name="instagram" size="large" size="large">
+            <Icon name="instagram" size="large">
               {" "}
             </Icon>
           </a>
@@ -139,3 +140,4 @@ export default Headers = () => {
     </Grid.Column>
   );
 };
+export default Headers;
