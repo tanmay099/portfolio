@@ -8,9 +8,10 @@
     "build": "rm -rf ./dist && next build",
     "start": "next start",
     "test": "jest --passWithNoTests",
+    "export": "next export",
     "cpToDist": "cp  public/manifest.json ./dist && cp -r ./public/assets/images ./dist",
     "analyze": "webpack --profile --json --config ./config/webpack.prod.js",
-    "deploy": "npm run build && aws s3 cp dist/ s3://tanmay099.com --recursive"
+    "deploy": "npm run build && next export && aws s3 cp out/ s3://tanmay099.com --recursive"
   },
   "keywords": [],
   "author": "",
