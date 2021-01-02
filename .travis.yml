@@ -10,7 +10,7 @@ script:
 before_deploy:
   - npm i -g travis-ci-cloudfront-invalidation
   - npm run build
-  - npm export
+  - npm run export
   - npm run cpToDist
 deploy:
   provider: s3
