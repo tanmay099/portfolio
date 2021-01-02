@@ -6,11 +6,11 @@ cache:
   directories:
     - node_modules
 script:
-  - yarn test
+  - npm test
 before_deploy:
-  - yarn global add travis-ci-cloudfront-invalidation
-  - yarn run build
-  - yarn run cpToDist
+  - npm global add travis-ci-cloudfront-invalidation
+  - npm run build
+  - npm run cpToDist
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
