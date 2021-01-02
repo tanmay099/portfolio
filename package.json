@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "rm -rf ./dist && next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest --passWithNoTests",
+    "cpToDist": "cp  public/manifest.json ./dist && cp -r ./public/assets/images ./dist",
+    "analyze": "webpack --profile --json --config ./config/webpack.prod.js",
+    "deploy": "npm run build && aws s3 cp dist/ s3://tanmay099.com --recursive"
   },
   "keywords": [],
   "author": "",

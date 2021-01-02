@@ -41,7 +41,7 @@ const Connect = () => {
             <Divider />
             <Header as="h4">
               <Icon name="at" color="red" />
-              <Header.Content>iam@tanmay099.com</Header.Content>
+              <Header.Content>namaste@tanmay099.me</Header.Content>
             </Header>
             <Divider />
             <Header as="a" href="https://twitter.com/Tanmay099">

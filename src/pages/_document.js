@@ -21,35 +21,37 @@ class MyDocument extends Document {
             href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
           />
           <link rel="manifest" href="/manifest.json" />
-          {/* <script
+          <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-108857425-2"
-          ></script> */}
-          {/* <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+            src="https://www.googletagmanager.com/gtag/js?id=G-S4LKGE1CWX"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: ` window.dataLayer = window.dataLayer || []; function gtag()
+            {dataLayer.push(arguments)}
+            gtag('js', new Date()); gtag('config', 'G-S4LKGE1CWX');`,
+            }}
+          ></script>
 
-      gtag("config", "UA-108857425-2");
-    </script> */}
-          {/* <script>
-      // Check that service workers are supported
-      if ("serviceWorker" in navigator) {
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+       if ("serviceWorker" in navigator) {
         // Use the window load event to keep the page load performant
         window.addEventListener("load", () => {
           navigator.serviceWorker.register("/service-worker.js", {
             scope: "/",
           });
-        });
-      }
-    </script> */}
+ });`,
+            }}
+          >
+            {/* Check that service workers are supported */}
+          </script>
           {/* <meta
             name="viewport"
             content="width=device-width,initial-scale=1.0"
-          />
-          <title>Tanmay Sharma</title> */}
+          /> */}
+          <title>Tanmay Sharma</title>
         </Head>
         <body>
           <Main />
